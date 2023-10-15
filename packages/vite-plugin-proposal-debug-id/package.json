@@ -31,7 +31,8 @@
     "build:types": "tsc --project types.tsconfig.json"
   },
   "dependencies": {
-    "magic-string": "^0.30.5"
+    "magic-string": "^0.30.5",
+    "proposal-debug-id-utils": "1.0.0"
   },
   "peerDependencies": {
     "vite": ">=4"
@@ -45,8 +46,7 @@
     "@types/node": "^16",
     "rollup": "4.1.1",
     "vite": "^4.4.11",
-    "typescript": "5.2.2",
-    "proposal-debug-id-utils": "1.0.0"
+    "typescript": "5.2.2"
   },
   "engines": {
     "node": ">= 16"
