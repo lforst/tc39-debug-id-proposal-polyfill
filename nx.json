@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build"],
+        "cacheDirectory": ".nxcache"
+      }
+    }
+  },
+  "namedInputs": {
+    "sharedGlobals": [
+      "{workspaceRoot}/*.js",
+      "{workspaceRoot}/*.json",
+      "{workspaceRoot}/yarn.lock"
+    ]
+  },
+  "targetDefaults": {
+    "build": {
+      "inputs": ["sharedGlobals"],
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"]
+    }
+  }
+}

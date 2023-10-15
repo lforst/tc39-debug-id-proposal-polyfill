@@ -1,0 +1,54 @@
+{
+  "name": "proposal-debug-id-utils",
+  "version": "1.0.0",
+  "description": "Utility code for Debug Id proposal polyfills",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lforst/tc39-debug-id-proposal-polyfill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lforst/tc39-debug-id-proposal-polyfill/issues"
+  },
+  "homepage": "https://github.com/lforst/tc39-debug-id-proposal-polyfill#readme",
+  "author": "Luca Forstner",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "run-p build:transpile build:types",
+    "build:transpile": "rollup --config rollup.config.mjs",
+    "build:types": "tsc --project types.tsconfig.json"
+  },
+  "dependencies": {
+    "uuid": "9.0.1"
+  },
+  "peerDependencies": {
+    "rollup": ">=3.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.23.2",
+    "@babel/preset-env": "7.23.2",
+    "@babel/preset-typescript": "7.23.2",
+    "@rollup/plugin-babel": "6.0.4",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@types/node": "^16",
+    "@types/uuid": "^9.0.5",
+    "plugin-core": "*",
+    "rollup": "4.1.1",
+    "typescript": "5.2.2"
+  },
+  "engines": {
+    "node": ">= 16"
+  }
+}

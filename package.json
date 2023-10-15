@@ -1,0 +1,30 @@
+{
+  "name": "tc39-debug-id-proposal-polyfill",
+  "version": "1.0.0",
+  "description": "Polyfill plugins for widely used JS tooling implementing the TC39 Source Map Debug ID proposal.",
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lforst/tc39-debug-id-proposal-polyfill.git"
+  },
+  "author": "Luca Forstner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lforst/tc39-debug-id-proposal-polyfill/issues"
+  },
+  "homepage": "https://github.com/lforst/tc39-debug-id-proposal-polyfill#readme",
+  "workspaces": [
+    "packages/*",
+    "playground"
+  ],
+  "scripts": {
+    "build": "nx run-many --target=build --all"
+  },
+  "devDependencies": {
+    "@nrwl/cli": "15.9.3",
+    "@nrwl/workspace": "16.10.0",
+    "nx": "16.10.0",
+    "prettier": "3.0.3",
+    "npm-run-all": "4.1.5"
+  }
+}
