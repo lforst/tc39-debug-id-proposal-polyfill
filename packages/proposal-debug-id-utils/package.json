@@ -9,6 +9,11 @@
   "bugs": {
     "url": "https://github.com/lforst/tc39-debug-id-proposal-polyfill/issues"
   },
+  "keywords": [
+    "proposal",
+    "polyfill",
+    "debug id"
+  ],
   "homepage": "https://github.com/lforst/tc39-debug-id-proposal-polyfill#readme",
   "author": "Luca Forstner",
   "license": "MIT",

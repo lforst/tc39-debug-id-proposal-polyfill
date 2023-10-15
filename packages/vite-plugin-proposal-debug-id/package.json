@@ -15,6 +15,12 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "proposal",
+    "polyfill",
+    "debug id",
+    "vite"
+  ],
   "exports": {
     ".": {
       "import": "./dist/esm/index.mjs",
